@@ -1,3 +1,5 @@
+microservices-secure:
+  property: microservices-secure profile Prod
 server:
   port: 5090
 

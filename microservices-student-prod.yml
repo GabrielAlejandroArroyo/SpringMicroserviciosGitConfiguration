@@ -1,3 +1,6 @@
+microservices-student:
+  property: microservices-student profile Prod
+
 server:
   port: 8090
 
