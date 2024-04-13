@@ -1,5 +1,5 @@
 microservices-secure:
-  property: microservices-secure profile Dev
+  property: microservices-secure profile Dev upd
 
 server:
   port: 5090
