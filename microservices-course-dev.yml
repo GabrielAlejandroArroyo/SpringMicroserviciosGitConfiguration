@@ -1,3 +1,6 @@
+microservices-course:
+  property: microservices-course profile Dev
+
 server:
   port: 9090
 
