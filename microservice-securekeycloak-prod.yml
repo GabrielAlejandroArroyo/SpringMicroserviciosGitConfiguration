@@ -1,0 +1,30 @@
+microservices-securekeycloak:
+  property: microservices-securekeycloak profile Prod
+server:
+  port: 2090
+logging:
+  level:
+    org:
+    keycloak: DEBUG
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+jwt:
+  auth:
+    converter:
+      principle-attribute: preferred_username
+      resource-id: spring-client-api-rest
+
+spring:
+  application:
+    name: msvc-keycloak
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:3090/realms/spring-boot-realm-dev
+          jwk-set-uri: http://localhost:3090/realms/spring-boot-realm-dev/protocol/openid-connect/certs
+

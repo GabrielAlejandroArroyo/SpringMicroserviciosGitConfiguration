@@ -1,0 +1,29 @@
+microservices-catalog:
+  property: microservices-catalog profile Prod
+server:
+#  Asigna el puerto automatuicamente
+  port: 0
+#  port: 6090
+spring:
+  application:
+    name: msvc-catalog
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/catalogDB
+    username: portal
+    password: portal
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  instance:
+    hostname: localhost
+#    Define la instanica dinamica donde levanta la instancia
+    instance-id: ${spring.application.name}:${random.uuid}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
