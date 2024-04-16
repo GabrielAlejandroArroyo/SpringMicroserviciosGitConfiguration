@@ -6,6 +6,8 @@ server:
 spring:
   application:
     name: msvc-eureka
+  profiles:
+    active: dev
 
 #Prueba
 eureka:
