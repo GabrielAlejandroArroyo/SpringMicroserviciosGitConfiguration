@@ -1,3 +1,6 @@
+msvc-eureka:
+  property: msvc-eureka profile dev
+
 server:
   port: 8763
 

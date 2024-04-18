@@ -1,3 +1,6 @@
+msvc-eureka:
+  property: msvc-eureka profile prod
+
 server:
   port: 8764
 
