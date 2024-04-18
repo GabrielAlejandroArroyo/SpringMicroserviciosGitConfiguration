@@ -1,5 +1,3 @@
-msvc-gateway:
-  property: msvc-gateway profile prod
 #Para que no se registre en el servidor de Eureka (No necesito que se registre en el eureka
 eureka:
   client:

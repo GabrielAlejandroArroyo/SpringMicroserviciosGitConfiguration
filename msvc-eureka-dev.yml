@@ -1,8 +1,5 @@
-msvc-eureka:
-  property: msvc-eureka profile dev
-
 server:
-  port: 8763
+  port: 8761
 
 spring:
   application:
