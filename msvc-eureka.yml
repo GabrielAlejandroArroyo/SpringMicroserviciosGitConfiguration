@@ -1,5 +1,5 @@
-msvc-eureka:
-  property: msvc-eureka profile
+#msvc-eureka:
+#  property: msvc-eureka profile
 server:
   port: 8761
 
